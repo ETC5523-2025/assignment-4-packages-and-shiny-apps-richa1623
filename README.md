@@ -15,7 +15,7 @@ You can install the development version of **bushfire** from GitHub using:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("richa1623/bushfire")
+remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-richa1623")
 ```
 
 ## Usage
