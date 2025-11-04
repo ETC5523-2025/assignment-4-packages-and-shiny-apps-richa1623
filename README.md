@@ -50,7 +50,7 @@ launch_app()
 
 ## Documentation
 
-Full documentation, including vignettes and function references, is available on the pkgdown site: <https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-richa1623>
+Full documentation, including vignettes and function references, is available on the pkgdown site: <https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-richa1623/>
 
 ## License
 
