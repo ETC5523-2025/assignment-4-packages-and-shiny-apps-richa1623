@@ -19,6 +19,7 @@ Creates a time series plot of yearly Fire Weather Index values for
 southeastern Australia, based on the \code{bushfire} dataset.
 }
 \examples{
+data(bushfire)
 plot_fwi_trend(bushfire, metric = "mean")
 plot_fwi_trend(bushfire, metric = "max")
 }

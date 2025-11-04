@@ -9,6 +9,7 @@ utils::globalVariables(c("bushfire", "year", ".data"))
 #'
 #' @return A ggplot object showing the trend over time.
 #' @examples
+#' data(bushfire)
 #' plot_fwi_trend(bushfire, metric = "mean")
 #' plot_fwi_trend(bushfire, metric = "max")
 #' @export

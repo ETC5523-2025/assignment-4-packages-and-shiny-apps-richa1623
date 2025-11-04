@@ -1,8 +1,10 @@
 library(shiny)
+library(shinythemes)
 library(bushfire)
 library(dplyr)
 
 ui <- fluidPage(
+  theme = shinytheme("darkly"),
   titlePanel("Bushfire Risk in Southeastern Australia"),
   sidebarLayout(
     sidebarPanel(
@@ -20,7 +22,7 @@ ui <- fluidPage(
   )
 )
 
-server <- function(input, output) {
+server <- function(input, output, session) {
   filtered <- reactive({
     bushfire %>%
       dplyr::filter(year >= input$years[1], year <= input$years[2])

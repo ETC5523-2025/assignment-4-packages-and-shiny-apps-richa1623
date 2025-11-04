@@ -1,4 +1,4 @@
-# bushfire 
+# bushfire
 
 ## Overview
 
@@ -46,7 +46,7 @@ launch_app()
 
 ## Documentation
 
-Full documentation, including vignettes and function references, is available on the pkgdown site: 👉 <https://your-github-username.github.io/bushfire>
+Full documentation, including vignettes and function references, is available on the pkgdown site: <https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-richa1623>
 
 ## License
 
