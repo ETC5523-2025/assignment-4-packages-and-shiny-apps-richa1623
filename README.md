@@ -22,25 +22,29 @@ remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-richa
 
 #### Load the package
 
-```{r}
-# library(bushfire)
+``` r
+{r}
+library(bushfire)
 ```
 
 #### Explore the dataset
 
-```{r}
+``` r
+{r}
 head(bushfire)
 ```
 
 #### Plot FWI trends
 
-```{r}
+``` r
+{r}
 plot_fwi_trend(bushfire, metric = "mean")
 ```
 
 #### Launch the Shiny app
 
-```{r}
+``` r
+{r}
 launch_app() 
 ```
 
