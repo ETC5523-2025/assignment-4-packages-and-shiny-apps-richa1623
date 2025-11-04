@@ -1,0 +1,10 @@
+url: ~
+template:
+  bootstrap: 5
+
+navbar:
+
+articles:
+- title: "Analysis"
+  contents:
+  - bushfire-analysis

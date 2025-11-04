@@ -1,0 +1,46 @@
+---
+title: "Bushfire Risk in Southeastern Australia"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{bushfire-analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## [Introduction]{.underline}
+
+The 2019–20 "Black Summer" bushfires were unprecedented in scale and severity.\
+This vignette reproduces the analysis of Oldenborgh et al. (2021, *NHESS*), showing how climate change has increased the likelihood of extreme fire weather in southeastern Australia.\
+It demonstrates the `bushfire` dataset, functions, and interactive app included in this package.
+
+## [The dataset]{.underline}
+
+The dataset `bushfire` contains yearly summaries of the Fire Weather Index (FWI) for southeastern Australia, September–February fire seasons, 1979–2020.
+
+```{r}
+library(bushfire)
+head(bushfire)
+```
+
+## [Plotting fire weather trends]{.underline}
+
+We can visualise long‑term changes in fire weather indices using the function plot_fwi_trend().
+
+```{r}
+plot_fwi_trend(bushfire, metric = "mean")
+plot_fwi_trend(bushfire, metric = "max")
+```
+
+These plots show upward trends in both mean and maximum FWI, consistent with the observed increase in extreme fire weather.
+
+## [Interactive exploration]{.underline}
+
+The package also includes a Shiny app for interactive analysis. Users can filter years, switch between mean and max FWI, and view both plots and summary tables. shiny::runApp(system.file("app", package = "bushfire"))
+
+## [Conclusion]{.underline}
+
+This vignette confirms that extreme fire weather has become more likely in recent decades, consistent with attribution studies. The package provides a reproducible workflow: dataset, documented functions, and an interactive app for exploring bushfire risk.
+
+## [References]{.underline}
+
+-   van Oldenborgh, G. J., et al. (2021). Attribution of the Australian bushfire risk to anthropogenic climate change. NHESS, 21(3), 941–960.

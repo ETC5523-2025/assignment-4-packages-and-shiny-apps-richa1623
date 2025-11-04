@@ -1,0 +1,24 @@
+Package: bushfire
+Title:  Bushfire Risk in Southeastern Australia
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Richa", 
+           family = "Anghan", 
+           email = "rang0020@student.monash.edu", 
+           role = c("aut", "cre"))
+Description: Provides yearly summaries of the Fire Weather Index (FWI) for southeastern Australia (1979–2020), reproducing the analysis of Oldenborgh et al. (2021, NHESS). Includes dataset, functions, and a Shiny app for exploring bushfire risk.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests: 
+    knitr,
+    rmarkdown,
+    dplyr
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Imports:
+    ggplot2,
+    shiny
